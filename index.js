@@ -197,13 +197,47 @@ const p3 = new Promise((resolve, reject) => {
 
 //========================= PROMISE HANDLERS ============================
 
-p3.then((value) => {
-  console.log(value);
-});
+// p3.then((value) => {
+//   console.log(value);
+// });
 
-const p4 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve(["Banana", "Apple", "Kivi"]);
-  });
-});
+// const p4 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve(["Banana", "Apple", "Kivi"]);
+//   },3000);
+// });
 
+// // console.log(p4);
+
+// p4.then((val)=>{
+//   console.log(val)
+//   val.map((e)=>{
+// console.log(e)
+//   })
+// })
+
+// const p5 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("😊😊😊");
+//   },3000);
+// });
+
+// p5.then((value)=>{
+// console.log(value)
+// }).catch((err)=>{
+// console.log(err)
+// })
+
+//====================== Handling Promises (try/Catch) =====================
+
+const p6 = new Promise((resolve, reject) => {
+   setTimeout(() => {
+   resolve("Promise Resolved");
+  },3000);
+}) 
+
+p6.then((val)=>{
+
+}).catch((err)=>{
+console.log(err)
+})
